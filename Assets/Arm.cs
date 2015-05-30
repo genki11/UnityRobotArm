@@ -14,7 +14,9 @@ public class Arm : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.W)) {   
-			transform.Translate (0, 0, 1);
+			//transform.Translate (0, 0, 1);
+			transform.Translate (transform.forward * 0.1f);
 		}
+
 	}
 }
